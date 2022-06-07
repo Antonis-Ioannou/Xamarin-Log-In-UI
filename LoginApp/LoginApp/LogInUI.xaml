@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LoginApp"
              x:Class="LoginApp.LogInUI">
     <ContentPage.Content>
         <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-            <Image Source="megasoft.jpg" WidthRequest="180" HeightRequest="180"></Image>
+            <!--<Image Source="megasoft.jpg" WidthRequest="180" HeightRequest="180"></Image>-->
+            <Image Source="{local:ImageResourceExtention Source=LoginApp.Images.megasoft.jpg}" WidthRequest="180" HeightRequest="180"></Image>
             <Entry x:Name="txtUsername" Placeholder="Username" TextColor="Black" PlaceholderColor="Gray"></Entry>
             <Entry x:Name="txtPassword" Placeholder="PAssword" IsPassword="True" TextColor="Black" PlaceholderColor="Gray"></Entry>
             <Button VerticalOptions="Center" Text="LogIn" TextColor="Black" BackgroundColor="Transparent" BorderWidth="1.5" CornerRadius="50" BorderColor="DarkOrange"
