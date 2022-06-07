@@ -25,7 +25,7 @@ namespace LoginApp
         {
             if (txtUsername.Text == "admin" && txtPassword.Text == "123")
             {
-                Navigation.PushAsync(new HomePage());
+                Navigation.PushAsync(new HomeFlyout());
             }
             else
             {
